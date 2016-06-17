@@ -405,7 +405,7 @@ int main(int argc, char **argv){
 	  std::cout << "draw" << std::endl;
 	  timepeak =  GausFit_MeanTime(pulse, low_edge, high_edge, pulseName); // get the time stamp
 	  float fs[5];
-	  //RisingEdgeFitTime( pulse, index_min, fs, "linearFit_" + pulseName, true);
+	  RisingEdgeFitTime( pulse, index_min, fs, "linearFit_" + pulseName, true);
 	  timecf0  = fs[0];
 	  timecf15 = fs[1];
 	  timecf30 = fs[2];
@@ -422,6 +422,7 @@ int main(int argc, char **argv){
 	  float fs[5];
 	  RisingEdgeFitTime( pulse, index_min, fs, "");
 	  timecf0  = fs[0];
+	  //std::cout << fs[0] << std::endl;
 	  timecf15 = fs[1];
 	  timecf30 = fs[2];
 	  timecf45 = fs[3];
