@@ -183,10 +183,13 @@ the X and Y positions of the beam particle as measured by the wire chamber.}
 \end{figure} 
 
 
+\section{Event Reconstruction and Selection }
+\label{sec:reco}
 
-\section{Test Beam Measurements and Results} 
-\label{sec:results} 
-
+Signals from each detector is recorded by the CAEN V1742 digitizer at $0.2$~ns time intervals.
+The baseline pedestal for each channel is determined using the time samples outside of
+the signal window, and is subsequently subtracted from the signal pulses. Examples of recorded
+signal waveforms in the CdTe sensor for electromagnetic showers are shown in Figure~\ref{fig:Pulses}.
 
 %Fig: Pulse shapes for various energies
 \begin{figure}[htbp] 
@@ -197,11 +200,33 @@ $100$~GeV, and $200$~GeV.}
 \label{fig:Pulses} 
 \end{figure} 
 
+The total charge collected in each channel is obtained by computing the integral of the pulse
+waveform. The time stamp for each signal is reconstructed by fitting the pulse waveform with
+an appropriate functional form. For signal pulses from the MCP-PMT's, used as reference timers, 
+we fit a gaussian function to a $1.5$~ns window around the peak of the pulse and extract the 
+timestamp $t_{0}$ as the mean parameter of the gaussian function. For signal pulses from the
+CdTe sensor, we fit a linear function to time sample points between $10\%$ and $60\%$ of the pulse
+maximum and the timestamp $t_{1}$ is assigned as the time at which the fitted linear function
+rises to $30\%$ of the pulse maximum. More details of the time stamp reconstruction can be
+found in reference~\cite{Anderson:2015gha}.
+
+
+
+
+\section{Calorimetric Measurements} 
+\label{sec:calorimetery} 
+
 
 
 
 %Fig: Charge distributions (noise, showers, MIP?)
 %Fig: Collected Charge vs Beam Energy
+
+
+\section{Timing Measurements} 
+\label{sec:timing} 
+
+
 
 %Fig: example DeltaT plot
 %Fig: Time resolution vs beam energy
