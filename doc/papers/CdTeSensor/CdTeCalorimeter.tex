@@ -211,16 +211,73 @@ rises to $30\%$ of the pulse maximum. More details of the time stamp reconstruct
 found in reference~\cite{Anderson:2015gha}.
 
 
+Based on the results shown in Figure~\ref{fig:BeamSensorPosition}, we select events
+for which the incident beam particle lies within the geometric area covered by the 
+CdTe sensor. The region with X coordinate between $2.5$~mm and $13.5$~mm and
+Y coordinate between $-8.0$~mm and $2.0$~mm is selected. We require that the 
+signal in the reference MCP-PMT detector has an amplitude larger than $25$~mV. 
+For data collected at the H2 beamline, the MCP-PMT detector is located behind
+the absorbers and can disriminate between electrons that shower in the absorber
+material and pions that do not. We require that the signal amplitude in the 
+MCP-PMT detector is larger than $500$~mV to select a pure sample of electrons. For
+data collected at the T9 beamline, the electron selection is performed using
+the LYSO scintillating crystal placed behind the absorber material and the CdTe sensor,
+as shown in Figure~\ref{fig:BeamSchematicDiagram}. The electromagnetic shower particles produce
+scintillation light in the LYSO crystal and are read out by an MCP-PMT. We require that
+the signal amplitude in the MCP-PMT coupled to the LYSO crystal is larger than $800$~mV
+to select a sample of pure electrons. Furthermore, as the precision of the beam particle position 
+measured by the wire chambers at the T9 beamline is relatively poor, we also require
+large signals in the $1$~cm~$\times$~$1$~cm scintillator trigger counter, with
+amplitude above $150$~mV, to constrain the beam to a smaller geometric region. 
 
 
 \section{Calorimetric Measurements} 
 \label{sec:calorimetery} 
 
-
-
+To obtain a preliminary characterization of the calorimetric performance 
+of the CdTe sensors, we measure the total charge collected out of the CdTe 
+sensor for various incident electron beam energies. Examples of the 
+charge distributions are shown in Figure~\ref{fig:ChargeDistribution}
+for $2$~GeV and $200$~GeV electrons.
 
 %Fig: Charge distributions (noise, showers, MIP?)
+\begin{figure}[htbp] 
+\centering
+\includegraphics[width=0.49\textwidth]{figures/2GeV_charge.pdf} 
+\includegraphics[width=0.49\textwidth]{figures/200GeV_charge.pdf} 
+\caption{Distribution of total charge collected in the CdTe sensor for a $2$~GeV
+electron after $2$~$\mathrm{X}_{0}$ of lead absorber (left) and a 200~GeV
+electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber (right). } 
+\label{fig:ChargeDistribution} 
+\end{figure} 
+
+We plot the mean collected charge as a function of the incident beam energy
+in Figure~\ref{fig:ChargeVsEnergy} and observe that the signal size scales
+up with increasing beam energy. The measured resolution is shown by the green
+error bars in Figure~\ref{fig:ChargeVsEnergy}, and is about $50\%$ for electrons
+in the range of a few GeV and about $30\%$ for electrons above $50$~GeV. 
+These resolution measurements are encouraging given that they are performed
+using only a single layer sample covering a relatively small transverse
+geometric area. In future studies, we intend to complete measurements of the
+longitudinal shower profile and to instrument a larger transverse geometric
+area to improve the transverse shower containment. 
+
 %Fig: Collected Charge vs Beam Energy
+\begin{figure}[htbp] 
+\centering
+\includegraphics[width=0.49\textwidth]{figures/ChargeVsEnergyAt2X0.pdf} 
+\includegraphics[width=0.49\textwidth]{figures/ChargeVsEnergyAt6X0.pdf} 
+\caption{ The mean charge collected in the CdTe sensor is plotted as a function
+of the electron beam energy. Left: Measurements performed at the T9 beamline
+with $2$~$\mathrm{X}_{0}$ of lead absorber placed directly in front of the 
+CeTe sensor. Right: Measurements performed at the H2 beamline
+with $6$~$\mathrm{X}_{0}$ of tungsten absorber placed directly in front of the 
+CeTe sensor. The blue error bars show the uncertainty on the mean integrated charge,
+while the green error bars show the measured resolution. The red line is a 
+linear fit to each set of measured data. } 
+\label{fig:ChargeVsEnergy} 
+\end{figure} 
+
 
 
 \section{Timing Measurements} 
@@ -229,20 +286,36 @@ found in reference~\cite{Anderson:2015gha}.
 
 
 %Fig: example DeltaT plot
+\begin{figure}[htbp] 
+\centering
+\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
+\caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
+electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
+\label{fig:DeltaT} 
+\end{figure} 
+
+
+
 %Fig: Time resolution vs beam energy
+\begin{figure}[htbp] 
+\centering
+\includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsEnergy.pdf} 
+\caption{ The measured time resolution of the CdTe sensor is plotted as a function
+of the electron beam energy. } 
+\label{fig:ChargeVsEnergy} 
+\end{figure} 
+
+
 
 %Extra studies
+%MIP peak
 %Rise time vs beam energy
 %DeltaT vs beam location
 %DeltaT vs amplitude
 %Charge vs beam location ( can we say anything about signal size on shower periphery? )
 
-\section{Discussion} 
-\label{sec:discussion} 
-
-
-\section{Conclusion}
-\label{sec:conclusion} 
+\section{Discussion and Summary}
+\label{sec:summary} 
 
 
 %% The Appendices part is started with the command \appendix;
