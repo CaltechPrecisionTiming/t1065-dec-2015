@@ -140,7 +140,9 @@ uses a CAEN V1742 switched capactor digitizer based on the DRS4 chip. Gas wire c
 are used to measure the position of each incident beam particle in the plane transverse
 to the beamline. A stack of lead or tungsten absorbers of different thicknesses are 
 placed about $5$~mm in front of the Cadmium Telluride (CdTe) sensor, which is 
-enclosed within a metal box covered by copper foil. A micro-channel plate photomultiplier (MCP-PMT)
+enclosed within a metal box covered by copper foil. We amplified the size of the
+signals from the CdTe sensor using a Hamamatsu C5594 amplifier with a bandwidth of
+$1.5$~GHz and providing a voltage gain of $36$~dB. A micro-channel plate photomultiplier (MCP-PMT)
 detector is used to provide a very precise reference timestamp. At the T9 beamline,
 a Hamamatsu R3809U MCP-PMT is placed just upstream of the absorber material. 
 At the H2 beamline a Photek 240 MCP-PMT is used, which contains a significant 
@@ -190,6 +192,8 @@ Signals from each detector is recorded by the CAEN V1742 digitizer at $0.2$~ns t
 The baseline pedestal for each channel is determined using the time samples outside of
 the signal window, and is subsequently subtracted from the signal pulses. Examples of recorded
 signal waveforms in the CdTe sensor for electromagnetic showers are shown in Figure~\ref{fig:Pulses}.
+Using randomly triggered data, we measured the RMS of the noise for the channel reading out 
+the CdTe sensor to be about $1.2-1.3$~mV. 
 
 %Fig: Pulse shapes for various energies
 \begin{figure}[htbp] 
@@ -283,26 +287,74 @@ linear fit to each set of measured data. }
 \section{Timing Measurements} 
 \label{sec:timing} 
 
+We characterize the timing performance of the CdTe sensor by measuring the timestamps
+relative to the MCP-PMT device used as a reference timer. An example of the timestamp
+measurement distribution for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
+material is shown in Figure~\ref{fig:DeltaT}. We study whether there is any significant
+dependence of the timestamp measurement on the amplitude of the signal, and the
+result is shown in Figure~\ref{fig:DeltaTVsAmplitude}. No significant amplitude dependence
+is observed for signals from the CdTe sensor.
+
 
 
 %Fig: example DeltaT plot
 \begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
+%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
 \caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
 electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
 \label{fig:DeltaT} 
 \end{figure} 
 
 
+%Fig: DeltaT vs Amplitude
+\begin{figure}[htbp] 
+\centering
+%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
+\caption{. } 
+\label{fig:DeltaTVsAmplitude} 
+\end{figure} 
+
+
+We show the dependence of the timestamp measurement as a function of the geometric
+position of the incident beam particle as measured by the wire chambers in 
+Figure~\ref{fig:DeltaTVsBeamXY}, and we observe a clear linear dependence.
+This geometric position non-uniformity of the time response adds significantly to the 
+time resolution ($XX$~ps). Performing a correction for this non-uniformity results
+in a time resolution of $YY$~ps. 
+
+%Fig: DeltaT vs Beam Location
+\begin{figure}[htbp] 
+\centering
+%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
+\caption{. } 
+\label{fig:DeltaTVsBeamXY} 
+\end{figure} 
+
+
+The measured time resolution as a function of the beam energy is shown in
+Figure~\ref{fig:ChargeVsEnergy}.
 
 %Fig: Time resolution vs beam energy
 \begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsEnergy.pdf} 
+%\includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsEnergy.pdf} 
 \caption{ The measured time resolution of the CdTe sensor is plotted as a function
 of the electron beam energy. } 
 \label{fig:ChargeVsEnergy} 
+\end{figure} 
+
+Including the position non-uniformity correction, we obtain a time resolution of $20$~ps
+for electrons with energy above $100$~GeV. 
+
+
+
+%Fig: riseTime vs energy
+\begin{figure}[htbp] 
+\centering
+%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
+\caption{ The risetime of the CdTe signal is plotted as a function of the incident beam energy. } 
+\label{fig:riseTime} 
 \end{figure} 
 
 
@@ -310,8 +362,6 @@ of the electron beam energy. }
 %Extra studies
 %MIP peak
 %Rise time vs beam energy
-%DeltaT vs beam location
-%DeltaT vs amplitude
 %Charge vs beam location ( can we say anything about signal size on shower periphery? )
 
 \section{Discussion and Summary}
