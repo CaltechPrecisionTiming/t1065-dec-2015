@@ -341,40 +341,27 @@ linear fit to each set of measured data. }
 \label{sec:timing} 
 
 We characterize the timing performance of the CdTe sensor by measuring the timestamps
-relative to the MCP-PMT device used as a reference timer. An example of the timestamp
-measurement distribution for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
-material is shown in Figure~\ref{fig:DeltaT}. We study whether there is any significant
-dependence of the timestamp measurement on the amplitude of the signal, and the
-result is shown in Figure~\ref{fig:DeltaTVsAmplitude}. No significant amplitude dependence
-is observed for signals from the CdTe sensor.
+relative to the MCP-PMT device used as a reference timer. In 
+Figure~\ref{fig:DeltaTVsAmplitude}, we show the dependence of the timestamp measurement 
+on the amplitude of the signal, and observe no significant amplitude dependence.
 
-
-
-%Fig: example DeltaT plot
-\begin{figure}[htbp] 
-\centering
-%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
-\caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
-electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
-\label{fig:DeltaT} 
-\end{figure} 
 
 
 %Fig: DeltaT vs Amplitude
 \begin{figure}[htbp] 
 \centering
 %\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
-\caption{. } 
+\caption{  } 
 \label{fig:DeltaTVsAmplitude} 
 \end{figure} 
 
 
-We show the dependence of the timestamp measurement as a function of the geometric
+We also study the dependence of the timestamp measurement as a function of the geometric
 position of the incident beam particle as measured by the wire chambers in 
-Figure~\ref{fig:DeltaTVsBeamXY}, and we observe a clear linear dependence.
-This geometric position non-uniformity of the time response adds significantly to the 
+Figure~\ref{fig:DeltaTVsBeamXY}. A clear linear dependence is observed, and this 
+geometric position non-uniformity of the time response adds significantly to the 
 time resolution ($XX$~ps). Performing a correction for this non-uniformity results
-in a time resolution of $YY$~ps. 
+in a time resolution of $YY$~ps.
 
 %Fig: DeltaT vs Beam Location
 \begin{figure}[htbp] 
@@ -388,9 +375,23 @@ of the beam particle position is shown in the black points.}
 \label{fig:DeltaTVsBeamXY} 
 \end{figure} 
 
+An example of the distribution of the timestamp measurement after correcting for the
+beam location for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
+material is shown in Figure~\ref{fig:DeltaT}. We extract the time measurement
+resolution from this distribution as the width parameter of a gaussian fit.
+The same measurement is performed on various beam energies and is summarized
+in Figure~\ref{fig:ChargeVsEnergy}. Including the position non-uniformity 
+correction, we obtain a time resolution of $25$~ps for electrons with energy above $100$~GeV. 
 
-The measured time resolution as a function of the beam energy is shown in
-Figure~\ref{fig:ChargeVsEnergy}.
+%Fig: example DeltaT plot
+\begin{figure}[htbp] 
+\centering
+%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
+\caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
+electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
+\label{fig:DeltaT} 
+\end{figure} 
+
 
 %Fig: Time resolution vs beam energy
 \begin{figure}[htbp] 
@@ -401,8 +402,6 @@ of the electron beam energy. }
 \label{fig:ChargeVsEnergy} 
 \end{figure} 
 
-Including the position non-uniformity correction, we obtain a time resolution of $20$~ps
-for electrons with energy above $100$~GeV. 
 
 
 To further characterize the timing performance of the CdTe signals, we measure the
@@ -412,6 +411,7 @@ $100$~GeV electrons are shown on the left of Figure~\ref{fig:riseTime}. The
 measured risetime as a function of the beam energy is shown on the right of 
 Figure~\ref{fig:riseTime}. We observe a risetime that is relatively stable
 at around $1.3$~ns.
+
 
 %Fig: riseTime vs energy
 \begin{figure}[htbp] 
