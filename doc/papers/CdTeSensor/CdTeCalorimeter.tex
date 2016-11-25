@@ -99,6 +99,20 @@
 
 
 \end{abstract}
+\begin{abstract}
+Precision timing detectors for high energy physics experiments with temporal resolutions of a few 10 ps are
+of pivotal importance to master the challenges posed by the highest energy particle accelerators such as the LHC.
+Calorimetric timing measurements have been a focus of recent search, exploiting the temporal coherence of 
+electromagnetic showers. Sensitive materials such as high light yield crystals are a viable detector technology as
+are silicon sampling calorimeters. Silicon sensors have very high efficiency for charged particles. The sensitivity to
+photons however is limited. A large fraction of the energy in an electromagnetic shower is carried by photons.
+To enhance the sensitivity to this portion of the shower sensor materias with higher atomic numbers than silicon 
+are preferable.  
+In this paper we present test beam measurements with a Cadmium-Tellurid sensor as an active element in a calorimeter with 
+a particular focus on the timing performance of the detector. A Shotky type Cadmium-Tellurid sensor with an active are of $1 cm^2$ and a thickness of 1 mm is used in an a
+rrangement with tungsten and lead absorbers. Measurements are performed with electron beams in the energy range from 2 GeV to 200 GeV. A timing resolution of 20 ps is achieved.  
+\end{abstract}
+
 
 \begin{keyword}
 %% keywords here, in the form: keyword \sep keyword
@@ -107,393 +121,33 @@
 Cadmium Telluride \sep Timing \sep Calorimeter
 %% MSC codes here, in the form: \MSC code \sep code
 %% or \MSC[2008] code \sep code (2000 is the default)
-
 \end{keyword}
-
 \end{frontmatter}
-
 %% \linenumbers
-
+%
 %% main text
-\section{Introduction} 
-
-There has been much recent interest in highly granular calorimeters with 
-precision timing capability at the level of $20-30$~ps for the High-Luminosity
-LHC and future higher energy hadron colliders. In order to probe increasingly
-rare interactions, future hadron colliders must provide an increase in the
-instantaneous luminosity well above $10^{35}\mathrm{cm}^{-2}\mathrm{s}^{-1}$.
-With current accelerator and particle detector capabilities, such a high 
-instantaneous luminosity will invariably result in very large amounts
-of pileup, exceeding several hundreds of simultaneous inelastic collisions per
-bunch crossing. The ability to discriminate between particles produced by 
-different inelastic collisions will be essential for future particle detector
-systems. Detectors capable of measuring the time of arrival of particles
-very precisely can be used to discriminate between particles produced by
-different inelastic collisions at different physical locations along the beam
-axis. Taking the beam bunch profile of the LHC as the model for future
-colliders, a detector that can measure the time of arrival of a particle
-with a precision of $20-30$~ps can effectively reduce the impact of
-pileup by a factor of $5$ to $10$. 
-
-Much recent interest has focused on highly granular calorimeters based on 
-silicon sensors as the active material~\cite{CALICE,HGCal}, due to
-radiation hardness considerations as well as maturity of the silicon sensor
-technology. In this article, we propose the first studies of a 
-calorimeter prototype using Cadmium Telluride (CdTe) sensors as the 
-active material. CdTe has been studied extensively in the context
-of thin film solar cells and has become a mature and wide-spread
-technology~\cite{CdTeSolar}. It has also been used as a radiation
-detector for nuclear spectroscopy, and is known to have high
-quantum efficiency for photons in the x-ray range of the spectrum.
-This feature is of particular interest in the context of its use
-in calorimetery because it would be uniquely sensitive to secondary
-electromagnetic shower particles in the keV range. Conventional prototypes 
-using silicon or scintillator material is not directly sensitive to such high 
-energy shower secondaries. Therefore, the first study of electromagnetic
-showers using CdTe sensors has the potential to yield new insight
-into the behavior of secondary particles produced within an 
-electromagnetic shower with energies in the keV range, and has the potential
-to yield an improvement on the energy measurement due to
-the additional contribution of the higher energy x-ray photons to which previous
-calorimeters were not sensitive.
-
-The recent interest in precision timing capabilities has intensified
-the study of the timing properties of silicon sensors. They have been
-shown to yield $20$~ps level precision given sufficiently large signal size
-in a variety of applications ranging from calorimetery~\cite{SiliconTiming} to 
-charged particle detectors~\cite{santacruz}. The signal formation process
-in CdTe sensors are very similar to the process in silicon and has 
-similar potential to yield precise timestamps.
-
-In this article, we study the signal response of the CdTe sensor to electromagnetic
-showers of varying energies and at different shower depths. We also study the timing
-performance of the CdTe sensors for electromagnetic showers.
-
- 
-\section{Cadmium Telluride Sensor}
-\label{sec:siliconpad}
-
-%Fig: Quantum Efficiency vs wavelength
-%Photos of sensor, drawing for the circuit
-
-  
-\section{Test-beam Setup and Experimental Apparatus }
-\label{sec:tbeam}
-
-We performed the test-beam measurements at the H2 beamline of the CERN North-Area testbeam facility
-and the T9 beamline of the CERN East-Area testbeam facility. They provide secondary electron beams 
-from the Proton Synchrotron (PS) and Super Proton Synchrotron (SPS)
-of energies ranging from $2$~GeV to $200$~GeV. The secondary beams are composed of 
-a mixture of electrons, pions, and muons. 
-
-Trigger counters made of photomultipliers coupled to plastic scintillators are used 
-to initiate the read out of the data acquisition (DAQ) system. The DAQ system
-uses a CAEN V1742 switched capactor digitizer based on the DRS4 chip. Gas wire chambers
-are used to measure the position of each incident beam particle in the plane transverse
-to the beamline. A stack of lead or tungsten absorbers of different thicknesses are 
-placed about $5$~mm in front of the Cadmium Telluride (CdTe) sensor, which is 
-enclosed within a metal box covered by copper foil. We amplified the size of the
-signals from the CdTe sensor using a Hamamatsu C5594 amplifier with a bandwidth of
-$1.5$~GHz and providing a voltage gain of $36$~dB. A micro-channel plate photomultiplier (MCP-PMT)
-detector is used to provide a very precise reference timestamp. At the T9 beamline,
-a Hamamatsu R3809U MCP-PMT is placed just upstream of the absorber material. 
-At the H2 beamline a Photek 240 MCP-PMT is used, which contains a significant 
-amount of absorber material (about 1.8 radiation lengths), and is therefore placed 
-just downstream of the CdTe sensor to avoid inducing an early electromagnetic shower.
-The precision of the time measurement for both types of MCP-PMT's is less than 
-$10$~ps~\cite{Ronzhin2015288}. The purity of the electron beam at the T9 beamline is
-significantly lower than at the H2 beamline, and therefore we use a LYSO crystal
-optically coupled to an MCP-PMT as a means of discriminating the electrons from the pions
-in the beam. The schematic diagrams of the experimental setups at H2 and T9 
-are shown in Figure~\ref{fig:BeamSchematicDiagram}. 
-
-
-%Fig: Diagram of detector elements
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/H2_BeamSchematicDiagram.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/T9_BeamSchematicDiagram.pdf} 
-\caption{Schematic diagrams of the test-beam setups at H2 (left) and T9 (right) are shown. 
-The timestamps $t_0$ and $t_1$ are defined in Section~\ref{sec:results}.} 
-\label{fig:BeamSchematicDiagram} 
-\end{figure} 
-
-
-The X and Y position measurements from the wire chamber are used to determine the location
-of the CdTe sensor relative to the beam and to align the beam. In 
-Figure~\ref{fig:BeamSensorPosition}, we show plots of the average amplitude measured in the
-CdTe sensor as a function of the X and Y positions as measured by the wire chamber. Based
-on these plots, we can restrict our measurements to the electrons whose impact point is close
-to the center of the CdTe sensor.
-
-%Fig: Beam profile X-Y plot
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/SensorXProfile.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/SensorYProfile.pdf} 
-\caption{The average amplitude measured in the CdTe sensor is plotted as a function of 
-the horizontal and vertical positions of the beam particle as measured by the wire chamber.} 
-\label{fig:BeamSensorPosition} 
-\end{figure} 
-
-
-\section{Event Reconstruction and Selection }
-\label{sec:reco}
-
-Signals from each detector is recorded by the CAEN V1742 digitizer at $0.2$~ns time intervals.
-The baseline pedestal for each channel is determined using the time samples outside of
-the signal window, and is subsequently subtracted from the signal pulses. Examples of recorded
-signal waveforms in the CdTe sensor for electromagnetic showers are shown in Figure~\ref{fig:Pulses}.
-Using randomly triggered data, we measured the RMS of the noise for the channel reading out 
-the CdTe sensor to be about $1.2-1.3$~mV. 
-
-%Fig: Pulse shapes for various energies
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/TypicalPulses.pdf}
-\includegraphics[width=0.49\textwidth]{figures/TypicalPulses_Zoom.pdf} 
-\caption{Examples of signal pulses in the CdTe sensor for electrons with energies of $50$~GeV,
-$100$~GeV, and $200$~GeV. Right: Zoom in of the example pulses.} 
-\label{fig:Pulses} 
-\end{figure} 
-
-The total charge collected in each channel is obtained by computing the integral of the pulse
-waveform. The time stamp for each signal is reconstructed by fitting the pulse waveform with
-an appropriate functional form. For signal pulses from the MCP-PMT's, used as reference timers, 
-we fit a gaussian function to a $1.5$~ns window around the peak of the pulse and extract the 
-timestamp $t_{0}$ as the mean parameter of the gaussian function. For signal pulses from the
-CdTe sensor, we fit a linear function to time sample points between $10\%$ and $60\%$ of the pulse
-maximum and the timestamp $t_{1}$ is assigned as the time at which the fitted linear function
-rises to $30\%$ of the pulse maximum. More details of the time stamp reconstruction can be
-found in reference~\cite{Anderson:2015gha}.
-
-
-Based on the results shown in Figure~\ref{fig:BeamSensorPosition}, we select events
-for which the incident beam particle lies within the geometric area covered by the 
-CdTe sensor. The region with X coordinate between $2.5$~mm and $13.5$~mm and
-Y coordinate between $-8.0$~mm and $2.0$~mm is selected. We require that the 
-signal in the reference MCP-PMT detector has an amplitude larger than $25$~mV. 
-For data collected at the H2 beamline, the MCP-PMT detector is located behind
-the absorbers and can disriminate between electrons that shower in the absorber
-material and pions that do not. We require that the signal amplitude in the 
-MCP-PMT detector is larger than $500$~mV to select a pure sample of electrons. For
-data collected at the T9 beamline, the electron selection is performed using
-the LYSO scintillating crystal placed behind the absorber material and the CdTe sensor,
-as shown in Figure~\ref{fig:BeamSchematicDiagram}. The electromagnetic shower particles produce
-scintillation light in the LYSO crystal and are read out by an MCP-PMT. We require that
-the signal amplitude in the MCP-PMT coupled to the LYSO crystal is larger than $800$~mV
-to select a sample of pure electrons. Furthermore, as the precision of the beam particle position 
-measured by the wire chambers at the T9 beamline is relatively poor, we also require
-large signals in the $1$~cm~$\times$~$1$~cm scintillator trigger counter, with
-amplitude above $150$~mV, to constrain the beam to a smaller geometric region. 
-
-
-\section{Calorimetric Measurements} 
-\label{sec:calorimetery} 
-
-To obtain a preliminary characterization of the calorimetric performance 
-of the CdTe sensors, we measure the total charge collected out of the CdTe 
-sensor for various incident electron beam energies. Examples of the 
-charge distributions are shown in Figure~\ref{fig:ChargeDistribution}
-for $2$~GeV and $200$~GeV electrons.
-
-%Fig: Charge distributions (noise, showers, MIP?)
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/2GeV_charge.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/200GeV_charge.pdf} 
-\caption{Distribution of total charge collected in the CdTe sensor for a $2$~GeV
-electron after $2$~$\mathrm{X}_{0}$ of lead absorber (left) and a 200~GeV
-electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber (right). } 
-\label{fig:ChargeDistribution} 
-\end{figure} 
-
-We plot the mean collected charge as a function of the incident beam energy
-in Figure~\ref{fig:ChargeVsEnergy} and observe that the signal size scales
-up with increasing beam energy. The measured resolution is shown by the green
-error bars in Figure~\ref{fig:ChargeVsEnergy}, and is about $50\%$ for electrons
-in the range of a few GeV and about $30\%$ for electrons above $50$~GeV. 
-These resolution measurements are encouraging given that they are performed
-using only a single layer sample covering a relatively small transverse
-geometric area. In future studies, we intend to complete measurements of the
-longitudinal shower profile and to instrument a larger transverse geometric
-area to improve the transverse shower containment. 
-
-%Fig: Collected Charge vs Beam Energy
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/ChargeVsEnergyAt2X0.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/ChargeVsEnergyAt6X0.pdf} 
-\caption{ The mean charge collected in the CdTe sensor is plotted as a function
-of the electron beam energy. Left: Measurements performed at the T9 beamline
-with $2$~$\mathrm{X}_{0}$ of lead absorber placed directly in front of the 
-CeTe sensor. Right: Measurements performed at the H2 beamline
-with $6$~$\mathrm{X}_{0}$ of tungsten absorber placed directly in front of the 
-CeTe sensor. The blue error bars show the uncertainty on the mean integrated charge,
-while the green error bars show the measured resolution. The red line is a 
-linear fit to each set of measured data. } 
-\label{fig:ChargeVsEnergy} 
-\end{figure} 
-
-
-
-\section{Timing Measurements} 
-\label{sec:timing} 
-
-We characterize the timing performance of the CdTe sensor by measuring the timestamps
-relative to the MCP-PMT device used as a reference timer. In 
-Figure~\ref{fig:DeltaTVsAmplitude}, we show the dependence of the timestamp measurement 
-on the amplitude of the signal, and observe no significant amplitude dependence.
-
-
-
-%Fig: DeltaT vs Amplitude
-\begin{figure}[htbp] 
-\centering
-%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
-\caption{  } 
-\label{fig:DeltaTVsAmplitude} 
-\end{figure} 
-
-
-We also study the dependence of the timestamp measurement as a function of the geometric
-position of the incident beam particle as measured by the wire chambers in 
-Figure~\ref{fig:DeltaTVsBeamXY}. A clear linear dependence is observed, and this 
-geometric position non-uniformity of the time response adds significantly to the 
-time resolution ($XX$~ps). Performing a correction for this non-uniformity results
-in a time resolution of $YY$~ps.
-
-%Fig: DeltaT vs Beam Location
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/DeltaTVsHorizontalPosition.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/DeltaTVsVerticalPosition.pdf} 
-\caption{ The distribution of the beam particle position measured by the wire chamber
-and the time measured in the CdTe sensor relative to the Photek reference detector
-is shown in the color scale. The mean value of the time measured in the CdTe sensor as a function
-of the beam particle position is shown in the black points.} 
-\label{fig:DeltaTVsBeamXY} 
-\end{figure} 
-
-An example of the distribution of the timestamp measurement after correcting for the
-beam location for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
-material is shown in Figure~\ref{fig:DeltaT}. We extract the time measurement
-resolution from this distribution as the width parameter of a gaussian fit.
-The time measurement resolution has a mild dependence on the beam particle position
-and is shown in Figure~\ref{fig:TimeResolutionVsBeamXY}.
-
-The same measurement is performed on various beam energies and is summarized
-in Figure~\ref{fig:ChargeVsEnergy}. Including the position non-uniformity 
-correction, we obtain a time resolution of $25$~ps for electrons with energy above $100$~GeV. 
-
-%Fig: example DeltaT plot
-\begin{figure}[htbp] 
-\centering
-%\includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
-\caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
-electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
-\label{fig:DeltaT} 
-\end{figure} 
-
-
-%Fig: Time Resolution vs Beam Location
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsBeamHorizontalPosition.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsBeamVerticalPosition.pdf} 
-\caption{ The time resolution is measured as a function of the horizontal (left) and vertical (right)
-beam position. }
-\label{fig:TimeResolutionVsBeamXY} 
-\end{figure} 
-
-
-
-
-%Fig: Time resolution vs beam energy
-\begin{figure}[htbp] 
-\centering
-%\includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsEnergy.pdf} 
-\caption{ The measured time resolution of the CdTe sensor is plotted as a function
-of the electron beam energy. } 
-\label{fig:ChargeVsEnergy} 
-\end{figure} 
-
-
-
-To further characterize the timing performance of the CdTe signals, we measure the
-risetime, defined as the time for the signal to rise from $10\%$ to $90\%$ of the maximum
-amplitude, for various electron beam energies. The distribution of risetime for
-$100$~GeV electrons are shown on the left of Figure~\ref{fig:riseTime}. The 
-measured risetime as a function of the beam energy is shown on the right of 
-Figure~\ref{fig:riseTime}. We observe a risetime that is relatively stable
-at around $1.3$~ns.
-
-
-%Fig: riseTime vs energy
-\begin{figure}[htbp] 
-\centering
-\includegraphics[width=0.49\textwidth]{figures/100GeV_risetime.pdf} 
-\includegraphics[width=0.49\textwidth]{figures/RisetimeVsEnergy.pdf} 
-\caption{ Left: Distribution of risetime of the CdTe signal for $100$~GeV electrons. 
-Right: Risetime of the CdTe signal is plotted as a function of the incident beam energy. } 
-\label{fig:riseTime} 
-\end{figure} 
-
-
-
-%Extra studies
-%MIP peak
-%Charge vs beam location ( can we say anything about signal size on shower periphery? )
-
-\section{Discussion and Summary}
-\label{sec:summary} 
-
-
-In this article, we describe the first measurement of high energy 
-electromagnetic showers using Cadmium Telluride sensors. The signal response
-is consistent with expectations and show ....[to be checked more carefully]...compared to silicon.
-These initial results are encouraging and motivate future work on 
-more detailed comparisons with simulation and more detailed 
-measurements of transverse and longitudinal shower profiles.
-
-
-The energy loss per $\mathrm{g}/\mathrm{cm}^{3}$ mass density 
-for a minimum ionizing particle (MIP) is $1.66$~MeV$\mathrm{g}^{-1}\mathrm{cm}^{2}$~\cite{PDG}. 
-For CdTe, with a density of $6.2\mathrm{g}/\mathrm{cm}^{3}$, the energy
-loss is $1.03$~keV/$\mu$m. The mean energy to produce an electron hole pair
-in CdTe is $4.43$~eV~\cite{Sze,Singh}, resulting in a signal size of
-233 electron hole pairs per $\mu$m thickness per MIP, or $37$~fC/mm per
-MIP. This signal size for the CdTe sensor is a factor of $2.2$ larger per unit thickness
-than for silicon sensors. 
-%Based on Figure~\ref{figures/ChargeVsEnergyAt6X0.pdf}, we project that at 32~GeV after $6$~$X_{0}$ 
-%of absorber, the total charge collected is $2.3$~pC, which amounts to about $62$ MIP-equivalent
-%signals. This is larger than the measured value of $54$ for silicon sensors under the same
-%beam energy and absorber thickness conditions. The extra signal may be a result of additional
-%sensitivity to keV range photons produced in the electromagnetic shower.
-
-
-
-
-We have measured the rise time for signals in the CdTe sensor to be about $1.3$~ns, which
-is relatively fast and suggests that there is potential for excellent time precision.
-We observe dependencies of the measured time on the geometric position of the
-incident beam particle, which is likely due to differences in the charge collection
-path. More detailed studies of this aspect are needed and a more optimal design of the 
-readout system is possible. Correcting for these dependencies yield time precision results
-of $25$~ps for a single layer CdTe sensor of transverse area $1$~cm$\times$~$1$~cm
-sampling the electromagnetic shower of a $200$~GeV electron after $6$ radiation lengths. 
-These initial results are encouraging and motivate further in-depth studies in the
-future.
-
-
-
-%% The Appendices part is started with the command \appendix;
-%% appendix sections are then done as normal sections
-%% \appendix
-
-%% \section{}
-%% \label{}
-
+%
+\input{introduction.tex}
+%
+%
+\input{cdtesensor.tex}  
+%
+%
+\input{setup.tex}  
+%
+%
+\input{reco.tex}  
+%
+%
+\input{calo.tex}  
+%
+%
+\input{timing.tex}  
+%
+%
+\input{summary.tex}  
+%
+%
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
 %%
