@@ -1,0 +1,56 @@
+{
+//=========Macro generated from canvas: cv/cv
+//=========  (Fri Nov 25 23:45:33 2016) by ROOT version5.34/36
+   TCanvas *cv = new TCanvas("cv", "cv",77,128,800,800);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   cv->Range(-1.8,-6.923077,10.2,50.76923);
+   cv->SetFillColor(0);
+   cv->SetBorderMode(0);
+   cv->SetBorderSize(2);
+   cv->SetLeftMargin(0.15);
+   cv->SetBottomMargin(0.12);
+   cv->SetFrameBorderMode(0);
+   cv->SetFrameBorderMode(0);
+   
+   TH1F *timingvsr = new TH1F("timingvsr","timingvsr",12,0,12);
+   timingvsr->SetBinContent(1,20.87842);
+   timingvsr->SetBinContent(2,22.49747);
+   timingvsr->SetBinContent(3,24.02144);
+   timingvsr->SetBinContent(4,25.02879);
+   timingvsr->SetBinContent(5,28.48102);
+   timingvsr->SetBinContent(6,27.9197);
+   timingvsr->SetBinContent(7,30.48809);
+   timingvsr->SetBinContent(8,32.89463);
+   timingvsr->SetBinContent(9,55.54493);
+   timingvsr->SetBinContent(10,108.2375);
+   timingvsr->SetBinContent(11,258.7581);
+   timingvsr->SetBinContent(12,105.2693);
+   timingvsr->SetBinError(1,2.539246);
+   timingvsr->SetBinError(2,0.95226);
+   timingvsr->SetBinError(3,0.6640619);
+   timingvsr->SetBinError(4,0.6441978);
+   timingvsr->SetBinError(5,0.7580874);
+   timingvsr->SetBinError(6,0.7489059);
+   timingvsr->SetBinError(7,0.8774371);
+   timingvsr->SetBinError(8,1.729001);
+   timingvsr->SetBinError(9,10.87792);
+   timingvsr->SetBinError(10,226.8402);
+   timingvsr->SetBinError(11,1702.419);
+   timingvsr->SetBinError(12,107.9643);
+   timingvsr->SetMinimum(0);
+   timingvsr->SetMaximum(45);
+   timingvsr->SetEntries(12);
+   timingvsr->SetLineWidth(2);
+   timingvsr->SetMarkerStyle(20);
+   timingvsr->GetXaxis()->SetTitle("Distance to (12 mm,6 mm) position [mm]");
+   timingvsr->GetXaxis()->SetRange(1,9);
+   timingvsr->GetXaxis()->SetTitleSize(0.05);
+   timingvsr->GetYaxis()->SetTitle("Time Resolution [ps]");
+   timingvsr->GetYaxis()->SetTitleSize(0.05);
+   timingvsr->GetYaxis()->SetTitleOffset(1.25);
+   timingvsr->Draw("");
+   cv->Modified();
+   cv->cd();
+   cv->SetSelected(cv);
+}
