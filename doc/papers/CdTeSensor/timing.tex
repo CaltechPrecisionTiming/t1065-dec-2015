@@ -6,13 +6,13 @@ We characterize the timing performance of the CdTe sensor by measuring the times
 relative to the MCP-PMT device used as a reference timer. An example of the distribution 
 of the timestamp measurement for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
 material is shown in Figure~\ref{fig:DeltaT}. We extract the time measurement
-resolution from this distribution as the width parameter of a gaussian fit.
+resolution from this distribution as the width parameter of a Gaussian fit.
 In Figure~\ref{fig:TimeResolutionVsEnergy} we show the measured time resolution as a function of the
-beam energy. At low beam energy, the time resolution improves with increasing size 
-of the signal, and is in the noise dominated regime. However, above $100$~GeV, the time 
-resolution no longer improves with increasing signal size, pointing towards some
-systematic limitation. We study a number of such factors in 
-Section~\ref{sec:systematicLimitations} below.
+beam energy. For beam energies below $50$~GeV, the time resolution improves
+with increasing signal size as expected based on the increasing signal-to-noise ratio.
+However, above $100$~GeV, the time resolution no longer improves with 
+increasing signal size, which points towards some systematic limitation. 
+We study a number of such factors in Section~\ref{sec:systematicLimitations} below.
 
 %Fig: example DeltaT plot
 \begin{figure}[htbp] 
@@ -37,10 +37,9 @@ of the electron beam energy. }
 To further characterize the timing performance of the CdTe signals, we measure the
 risetime, defined as the time for the signal to rise from $10\%$ to $90\%$ of the maximum
 amplitude, for various electron beam energies. The distribution of risetime for
-$100$~GeV electrons are shown on the left of Figure~\ref{fig:riseTime}. The 
-measured risetime as a function of the beam energy is shown on the right of 
-Figure~\ref{fig:riseTime}. We observe a risetime that is relatively stable
-at around $1.35$~ns.
+$100$~GeV electrons and the measured risetime as a function of the beam energy
+are shown on the left and right of Figure~\ref{fig:riseTime} respectively. 
+We observe a risetime of around $1.35$~ns that does not vary with the beam energy.
 
 
 %Fig: riseTime vs energy
@@ -59,15 +58,15 @@ Right: Risetime of the CdTe signal is plotted as a function of the incident beam
 \label{sec:systematicLimitations}
 
 One of the major systematic effects that have been observed in past
-timing studies~\cite{Anderson:2015gha,Ronzhin:2015pba,MCPShowerMaxPaper} is the dependence 
+timing studies~\cite{Anderson:2015gha,Ronzhin201552,MCPShowerMaxPaper} is the dependence 
 of the time measurement on the amplitude of the signal. On the left of 
 Figure~\ref{fig:DeltaTVsAmplitude}, we show the dependence of the timestamp measurement 
 on the amplitude of the signal, and observe a relatively mild dependance on amplitude.
 On the right of Figure~\ref{fig:DeltaTVsAmplitude}, we show the measured time resolution
-as a function of the signal amplitude and we observe a characteristic improvement
-in the resolution with increasing signal amplitude at low amplitudes. In the region
-below about $500$~mV in amplitude, the impact of the signal-to-noise ratio is still 
-the dominant factor.
+as a function of the signal amplitude and we observe a clear improvement
+in the resolution with increasing signal amplitudes up to $0.5$~V.
+In this region, the impact of the signal-to-noise ratio is still 
+the dominant factor for the time resolution.
 
 %Fig: DeltaT vs Amplitude
 \begin{figure}[htbp] 
