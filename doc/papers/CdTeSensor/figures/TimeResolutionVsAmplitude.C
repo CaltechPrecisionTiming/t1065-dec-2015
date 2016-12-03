@@ -44,10 +44,13 @@
    timingvse->SetLineWidth(2);
    timingvse->SetMarkerStyle(20);
    timingvse->GetXaxis()->SetTitle("Signal Amplitude [V]");
-   timingvse->GetXaxis()->SetTitleSize(0.05);
+   timingvse->GetXaxis()->SetTitleSize(0.040);
+   timingvse->GetXaxis()->SetLabelSize(0.040);
+   timingvse->GetXaxis()->SetTitleOffset(1.2);
    timingvse->GetYaxis()->SetTitle("Time Resolution [ps]");
-   timingvse->GetYaxis()->SetTitleSize(0.05);
-   timingvse->GetYaxis()->SetTitleOffset(1.25);
+   timingvse->GetYaxis()->SetTitleSize(0.040);
+   timingvse->GetYaxis()->SetLabelSize(0.040);
+   timingvse->GetYaxis()->SetTitleOffset(1.35);
    timingvse->Draw("");
    cv->Modified();
    cv->cd();

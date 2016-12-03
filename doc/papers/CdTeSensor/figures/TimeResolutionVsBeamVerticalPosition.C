@@ -44,10 +44,13 @@
    timingvsx->SetLineWidth(2);
    timingvsx->SetMarkerStyle(20);
    timingvsx->GetXaxis()->SetTitle("Vertical Beam Position [mm]");
-   timingvsx->GetXaxis()->SetTitleSize(0.05);
+   timingvsx->GetXaxis()->SetTitleSize(0.04);
+   timingvsx->GetXaxis()->SetLabelSize(0.04);
+   timingvsx->GetXaxis()->SetTitleOffset(1.2);
    timingvsx->GetYaxis()->SetTitle("Time Resolution [ps]");
-   timingvsx->GetYaxis()->SetTitleSize(0.05);
-   timingvsx->GetYaxis()->SetTitleOffset(1.25);
+   timingvsx->GetYaxis()->SetTitleSize(0.04);
+   timingvsx->GetYaxis()->SetTitleOffset(1.35);
+   timingvsx->GetYaxis()->SetLabelSize(0.04);
    timingvsx->Draw("");
    cv->Modified();
    cv->cd();
