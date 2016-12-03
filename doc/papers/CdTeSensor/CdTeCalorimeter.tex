@@ -19,10 +19,12 @@
 %% with numbered style bibliographic references
 %% SP 2008/03/01
 
-\documentclass[preprint,1p]{elsarticle}
+\documentclass[a4paper,11pt]{article}
+\pdfoutput=1
 
+\usepackage{jinstpub} 
 
-\biboptions{numbers,sort&compress}
+%\biboptions{numbers,sort&compress}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
@@ -52,15 +54,7 @@
 %% for the whole article with \linenumbers.
 %% \usepackage{lineno}
 
-\journal{Nucl. Instrum. Meth. A}
-
-\begin{document}
-\linenumbers
-
-\begin{frontmatter}
-
 %% Title, authors and addresses
-
 %% use the tnoteref command within \title for footnotes;
 %% use the tnotetext command for theassociated footnote;
 %% use the fnref command within \author or \address for footnotes;
@@ -81,25 +75,18 @@
 
 \title{Precision Timing Detectors with Cadmium Telluride Sensor}
 
-%% use optional labels to link authors explicitly to addresses:
-%% \author[label1,label2]{}
-%% \address[label1]{}
-%% \address[label2]{}
 
 \author[1]{A.~Bornheim}
 \author[1]{C.~Pena}
 \author[1]{M.~Spiropulu}
-\author[1,cor]{S.~Xie}
+\author[1]{S.~Xie}
 \author[1]{Z.~Zhang}
-\address[1]{California Institute of Technology, Pasadena, CA, USA}
-\cortext[cor]{Corresponding author}
+\affiliation[1]{California Institute of Technology, Pasadena, CA, USA}
 
-\begin{abstract}
-%% Text of abstract
+\emailAdd{sixie@hep.caltech.edu}
 
 
-\end{abstract}
-\begin{abstract}
+\abstract{
 Precision timing detectors for high energy physics experiments with temporal resolutions of a few $10$~ps are
 of pivotal importance to master the challenges posed by the highest energy particle accelerators such as the LHC.
 Calorimetric timing measurements have been a focus of recent research, enabled by exploiting the temporal 
@@ -113,18 +100,19 @@ the active element of a secondary emission calorimeter with focus on the timing 
 A Schottky type Cadmium-Telluride sensor with an active are of $1$~$\mathrm{cm}^{2}$ and a thickness of $1$~mm 
 is used in an arrangement with tungsten and lead absorbers. Measurements are performed with electron beams 
 in the energy range from 2 GeV to 200 GeV. A timing resolution of 25 ps is achieved under the best conditions.
-\end{abstract}
+}
 
 
-\begin{keyword}
-%% keywords here, in the form: keyword \sep keyword
+\keywords{ Cadmium Telluride, Timing, Calorimeter}
 
-%% PACS codes here, in the form: \PACS code \sep code
-Cadmium Telluride \sep Timing \sep Calorimeter
-%% MSC codes here, in the form: \MSC code \sep code
-%% or \MSC[2008] code \sep code (2000 is the default)
-\end{keyword}
-\end{frontmatter}
+
+\begin{document}
+  
+\maketitle
+\flushbottom
+\linenumbers
+
+
 %% \linenumbers
 %
 %% main text

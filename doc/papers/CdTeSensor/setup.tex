@@ -7,7 +7,7 @@ from the Proton Synchrotron (PS) and Super Proton Synchrotron (SPS)
 of energies ranging from $2$~GeV to $200$~GeV. The secondary beams are composed of 
 a mixture of electrons, pions, and muons. 
 
-Trigger counters made of photomultipliers coupled to $4 \mathrm{cm}\times 4 \mathrm{cm}$ 
+Trigger counters made of photomultipliers coupled to $4$~$\mathrm{cm}$~$\times$~$4$~$\mathrm{cm}$ 
 plastic scintillators are used 
 to initiate the read out of the data acquisition (DAQ) system. The DAQ system
 uses a CAEN V1742 switched capactor digitizer based on the DRS4 chip~\cite{DRS4}. Wire chambers
@@ -25,7 +25,7 @@ At the H2 beamline a Photek 240 MCP-PMT~\cite{PhotekDataSheet} is used, which co
 amount of absorber material (about 1.8 radiation lengths), and is therefore placed 
 just downstream of the CdTe sensor to avoid inducing an early electromagnetic shower.
 The precision of the time measurement for both types of MCP-PMT's is less than 
-$10$~ps~\cite{MCPShowerMaxPaper}. The purity of the electron beam at the T9 beamline is
+$10$~ps~\cite{MCPShowerMaxPaper,Anderson:2015gha}. The purity of the electron beam at the T9 beamline is
 significantly lower than at the H2 beamline, and therefore we use a LYSO crystal
 optically coupled to an MCP-PMT as a means of discriminating the electrons from the pions
 in the beam. The schematic diagrams of the experimental setups at H2 and T9 
@@ -43,18 +43,18 @@ The timestamps $t_0$ and $t_1$ are defined in Section~\ref{sec:reco}.}
 \end{figure} 
 
 
-The X and Y position measurements from the wire chamber are used to determine the location
+The horizontal and vertical position measurements from the wire chamber are used to determine the location
 of the CdTe sensor relative to the beam and to align the beam. In 
 Figure~\ref{fig:BeamSensorPosition}, we show the average amplitude measured in the
-CdTe sensor as a function of the X and Y positions as measured by the wire chamber. Based
+CdTe sensor as a function of the horizontal and vertical positions as measured by the wire chamber. Based
 on these plots, we can restrict our measurements to those electrons whose impact point is close
 to the center of the CdTe sensor.
 
 %Fig: Beam profile X-Y plot
 \begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.49\textwidth]{figures/SensorXProfile.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/SensorYProfile.pdf} 
+\includegraphics[width=0.49\textwidth]{figures/SensorXProfile.pdf} 
 \caption{The average amplitude measured in the CdTe sensor is plotted as a function of 
 the horizontal and vertical positions of the beam particle as measured by the wire chamber.} 
 \label{fig:BeamSensorPosition} 
