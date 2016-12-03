@@ -19,7 +19,7 @@ We study a number of such factors in Section~\ref{sec:systematicLimitations} bel
 \centering
 \includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
 \caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
-electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
+electron after $6$~$\mathrm{X}_{0}$ of tungsten and lead absorber. } 
 \label{fig:DeltaT} 
 \end{figure} 
 
@@ -35,7 +35,7 @@ of the electron beam energy. }
 
 
 To further characterize the timing performance of the CdTe signals, we measure the
-risetime, defined as the time for the signal to rise from $10\%$ to $90\%$ of the maximum
+risetime, defined as the time for the signal to rise from $10\%$ to $90\%$ of its maximum
 amplitude, for various electron beam energies. The distribution of risetime for
 $100$~GeV electrons and the measured risetime as a function of the beam energy
 are shown on the left and right of Figure~\ref{fig:riseTime} respectively. 
@@ -61,7 +61,7 @@ One of the major systematic effects that have been observed in past
 timing studies~\cite{Anderson:2015gha,Ronzhin201552,MCPShowerMaxPaper} is the dependence 
 of the time measurement on the amplitude of the signal. On the left of 
 Figure~\ref{fig:DeltaTVsAmplitude}, we show the dependence of the timestamp measurement 
-on the amplitude of the signal, and observe a relatively mild dependance on amplitude.
+on the amplitude of the signal, and observe a mild dependance on amplitude.
 On the right of Figure~\ref{fig:DeltaTVsAmplitude}, we show the measured time resolution
 as a function of the signal amplitude and we observe a clear improvement
 in the resolution with increasing signal amplitudes up to $0.5$~V.
@@ -85,12 +85,20 @@ time resolution is measured as a function of the signal amplitude. }
 We also study the dependence of the timestamp measurement as a function of the geometric
 position of the incident beam particle as measured by the wire chambers in 
 Figure~\ref{fig:DeltaTVsBeamXY}. A relatively large and linear dependence is observed, 
-and this geometric position non-uniformity of the time response adds significantly to the 
+and this position non-uniformity of the time response adds significantly to the 
 time resolution (about $35$~ps). Performing a correction for this non-uniformity improves
 the time resolution from $44$~ps to $25$~ps for events with $100$~GeV electrons.
 The distribution of timestamps after correcting for the geometric position is shown
-in Figure~\ref{fig:DeltaTCorr}. The measured time resolution has a mild dependence on 
-the beam particle position and is shown in Figure~\ref{fig:TimeResolutionVsBeamXY}.
+in Figure~\ref{fig:DeltaTCorr}. The measured time resolution, after correction for
+the position non-uniformity, has a mild dependence on the beam particle position 
+and is shown in Figure~\ref{fig:TimeResolutionVsBeamXY}. Combining the time resolution
+dependence on the horizontal and vertical beam positions, we measure the time resolution
+as a function of the planar distance between the beam position and the location of the 
+wire bond on the CdTe sensor, and observe a more clear depedence shown in 
+Figure~\ref{fig:TimeResolutionVsR}. One possible cause this observed behavior
+is an additional time jitter induced by dispersion of the primary signal path from the
+ionization location to the location of the wirebond, but further studies are necessary
+to derive a better understanding of this effect.
 
 %Fig: DeltaT vs Beam Location
 \begin{figure}[htbp] 
@@ -129,8 +137,10 @@ beam position. }
 \begin{figure}[htbp]
 \centering 
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsR.pdf} 
-\caption{ The time resolution is measured as a function of the transverse distance of the incidenting particle to the wire bond of the sensor. The mean time response depencency shown in Fig.~\ref{fig:TimeResolutionVsBeamXY} has been corrected for.}
-\label{fig:TimeResolutionVsBeamXY}
+\caption{ The time resolution is measured as a function of the planar distance of the 
+incident beam particle to the wire bond location on the sensor. The position non-uniformity
+of the time response as shown in Fig.~\ref{fig:DeltaTVsBeamXY} has been corrected for.}
+\label{fig:TimeResolutionVsR}
 \end{figure}
 
 
