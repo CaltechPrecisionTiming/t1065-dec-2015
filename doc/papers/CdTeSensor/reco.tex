@@ -7,14 +7,16 @@ The baseline pedestal for each channel is determined using the time samples outs
 the signal window, and is subsequently subtracted from the signal pulses. Examples of recorded
 signal waveforms in the CdTe sensor for electromagnetic showers are shown in Figure~\ref{fig:Pulses}.
 Using randomly triggered data, we measured the RMS of the noise for the channel reading out 
-the CdTe sensor to be about $1.2-1.3$~mV. 
+the CdTe sensor after the amplifier to be about $1.3$~mV. 
 
 %Fig: Pulse shapes for various energies
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{figures/CdTe_pulse.pdf}
 \includegraphics[width=0.49\textwidth]{figures/CdTe_pulseZ.pdf} 
-\caption{Examples of signal pulse in the CdTe sensor for electrons with energies of $100$~GeV. Right: Zoom in of the example pulse. The equivalent RMS noise before the amplifier and attenuator for this data is about 0.08 mV.} 
+\caption{Examples of signal pulse in the CdTe sensor for electrons with energies of $100$~GeV. 
+The signal pulse shown was recorded by the CAEN V1742 digitizer after a $10$~dB 
+attenuator and a $36$~dB fast amplifier. Right: Zoom in of the example pulse. } 
 \label{fig:Pulses} 
 \end{figure} 
 
@@ -30,10 +32,12 @@ rises to $30\%$ of the pulse maximum. More details of the timestamp reconstructi
 found in reference~\cite{Anderson:2015gha}.
 
 
-Based on the results shown in Figure~\ref{fig:BeamSensorPosition}, we select events
-for which the incident beam particle lies within the geometric area covered by the 
-CdTe sensor. The region with horizontal coordinate between $-8.0$~mm and $2.0$~mm
-vertical coordinate between $2.5$~mm and $13.5$~mm is selected. We also require that the 
+For the measurements performed at the H2 beamline, 
+based on the results shown in Figure~\ref{fig:BeamSensorPosition} we select events
+for which the incident beam particle lies within a region of size $3$~mm by $3$~mm 
+about the center of the sensor. For the measurements performed at the T9 beamline,
+the resolution of the wire chamber measurement was insufficient to make this 
+requirement. We also require that the 
 signal in the reference MCP-PMT detector has an amplitude larger than $25$~mV. 
 For data collected at the H2 beamline, the MCP-PMT detector is located behind
 the absorbers and can discriminate between electrons that shower in the absorber

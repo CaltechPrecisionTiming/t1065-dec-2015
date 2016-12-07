@@ -6,7 +6,7 @@ and the T9 beamline of the CERN East-Area testbeam facility. They provide electr
 from the Proton Synchrotron (PS) and Super Proton Synchrotron (SPS)
 of energies ranging from $2$~GeV to $200$~GeV. The beams are composed of 
 a mixture of electrons and pions. The electron fraction in the beam at H2 is typically larger than 75\%
-while at T9 its typically less than 10\%.. 
+while at T9 it is typically about 10\%.. 
 
 Trigger counters made of photomultipliers coupled to $4$~$\mathrm{cm}$~$\times$~$4$~$\mathrm{cm}$ 
 plastic scintillators are used 
@@ -15,7 +15,7 @@ uses a CAEN V1742 switched capactor digitizer based on the DRS4 chip~\cite{DRS4}
 are used to measure the position of each incident beam particle in the plane transverse
 to the beamline. A stack of lead or tungsten absorbers of different thicknesses are 
 placed about $5$~mm in front of the CdTe sensor, which is 
-enclosed within an copper box. We amplified the size of the
+enclosed within a copper box. We amplified the size of the
 signals from the CdTe sensor using a Hamamatsu C5594 amplifier~\cite{HamaAmpDataSheet} with a bandwidth of
 $1.5$~GHz and providing a voltage gain of $36$~dB. A $10$~dB attenuator was used to attenuate the input signal 
 to the amplifier to adjust the CdTe signal to the dynamic range of the amplifier. 
@@ -25,14 +25,16 @@ a Hamamatsu R3809U MCP-PMT~\cite{HamaMCPDataSheet} is placed just upstream of th
 At the H2 beamline a Photek 240 MCP-PMT~\cite{PhotekDataSheet} is used, which contains a significant 
 amount of absorber material (about 1.8 radiation lengths), and is therefore placed 
 just downstream of the CdTe sensor to avoid inducing an early electromagnetic shower.
-The precision of the time measurement for both types of MCP-PMT's is less than 
+The precision of the time measurement for both types of MCP-PMTs is less than 
 $10$~ps~\cite{MCPShowerMaxPaper,Anderson:2015gha}. As the purity of the electron beam at the T9 beamline is
-significantly lower than at the H2 beamline, and therefore we use a LYSO crystal
+significantly lower than at the H2 beamline, we use a LYSO crystal
 optically coupled to an MCP-PMT as a means of discriminating the electrons from the pions
 in the beam. The entire setup of absorber, reference counter and CdTe sensor box is housed in an aluminum
 box to provide further shielding against environmental noise.
 The schematic diagrams of the experimental setups at H2 and T9 
-are shown in Figure~\ref{fig:BeamSchematicDiagram}. 
+are shown in Figure~\ref{fig:BeamSchematicDiagram}, and a photograph
+of the contents of the aluminum box for the setup at T9 is shown in 
+Figure~\ref{fig:SetupPhoto}.
 
 
 %Fig: Diagram of detector elements
@@ -43,6 +45,15 @@ are shown in Figure~\ref{fig:BeamSchematicDiagram}.
 \caption{Schematic diagrams of the test-beam setups at H2 (left) and T9 (right) are shown. 
 The timestamps $t_0$ and $t_1$ are defined in Section~\ref{sec:reco}.} 
 \label{fig:BeamSchematicDiagram} 
+\end{figure} 
+
+\begin{figure}[htbp] 
+\centering
+\includegraphics[width=0.75\textwidth]{figures/T9SetupPhoto.pdf} 
+\caption{ Photograph of the setup used in the T9 beam line. The reference timing MCP-PMT 
+is located on the leftmost region of the photo, followed to the right by a scintillator counter, 
+the copper box enclosing the CdTe sensor and an MCP-PMT optically coupled to a LYSO cube. } 
+\label{fig:SetupPhoto} 
 \end{figure} 
 
 
