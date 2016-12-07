@@ -1,0 +1,173 @@
+%% 
+%% Copyright 2007, 2008, 2009 Elsevier Ltd
+%% 
+%% This file is part of the 'Elsarticle Bundle'.
+%% ---------------------------------------------
+%% 
+%% It may be distributed under the conditions of the LaTeX Project Public
+%% License, either version 1.2 of this license or (at your option) any
+%% later version.  The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.2 or later is part of all distributions of LaTeX
+%% version 1999/12/01 or later.
+%% 
+%% The list of all files belonging to the 'Elsarticle Bundle' is
+%% given in the file `manifest.txt'.
+%% 
+
+%% Template article for Elsevier's document class `elsarticle'
+%% with numbered style bibliographic references
+%% SP 2008/03/01
+
+\documentclass[a4paper,11pt]{article}
+\pdfoutput=1
+
+\usepackage{jinstpub} 
+
+%\biboptions{numbers,sort&compress}
+
+%% Use the option review to obtain double line spacing
+%% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
+
+%% Use the options 1p,twocolumn; 3p; 3p,twocolumn; 5p; or 5p,twocolumn
+%% for a journal layout:
+%% \documentclass[final,1p,times]{elsarticle}
+%% \documentclass[final,1p,times,twocolumn]{elsarticle}
+%% \documentclass[final,3p,times]{elsarticle}
+%% \documentclass[final,3p,times,twocolumn]{elsarticle}
+%% \documentclass[final,5p,times]{elsarticle}
+%% \documentclass[final,5p,times,twocolumn]{elsarticle}
+
+%% For including figures, graphicx.sty has been loaded in
+%% elsarticle.cls. If you prefer to use the old commands
+%% please give \usepackage{epsfig}
+
+%% The amssymb package provides various useful mathematical symbols
+\usepackage{amssymb}
+\usepackage{lineno}
+%\usepackage{hyperref}
+
+%% The amsthm package provides extended theorem environments
+%% \usepackage{amsthm}
+
+%% The lineno packages adds line numbers. Start line numbering with
+%% \begin{linenumbers}, end it with \end{linenumbers}. Or switch it on
+%% for the whole article with \linenumbers.
+%% \usepackage{lineno}
+
+%% Title, authors and addresses
+%% use the tnoteref command within \title for footnotes;
+%% use the tnotetext command for theassociated footnote;
+%% use the fnref command within \author or \address for footnotes;
+%% use the fntext command for theassociated footnote;
+%% use the corref command within \author for corresponding author footnotes;
+%% use the cortext command for theassociated footnote;
+%% use the ead command for the email address,
+%% and the form \ead[url] for the home page:
+%% \title{Title\tnoteref{label1}}
+%% \tnotetext[label1]{}
+%% \author{Name\corref{cor1}\fnref{label2}}
+%% \ead{email address}
+%% \ead[url]{home page}
+%% \fntext[label2]{}
+%% \cortext[cor1]{}
+%% \address{Address\fnref{label3}}
+%% \fntext[label3]{}
+
+\title{Precision Timing Detectors with Cadmium Telluride Sensor}
+
+
+\author[1]{A.~Bornheim}
+\author[1]{C.~Pena}
+\author[1]{M.~Spiropulu}
+\author[1]{S.~Xie}
+\author[1]{Z.~Zhang}
+\affiliation[1]{California Institute of Technology, Pasadena, CA, USA}
+
+\emailAdd{sixie@hep.caltech.edu}
+
+
+\abstract{
+Precision timing detectors for high energy physics experiments with temporal resolutions of a few $10$~ps are
+of pivotal importance to master the challenges posed by the highest energy particle accelerators such as the LHC.
+Calorimetric timing measurements have been a focus of recent research, enabled by exploiting the temporal 
+coherence of electromagnetic showers. Scintillating crystals with high light yield as well as silicon sensors
+are viable sensitive materials for sampling calorimeters. Silicon sensors have very high efficiency for 
+charged particles. However, their sensitivity to photons, which comprise a large fraction of the
+electromagnetic shower, is limited. A large fraction of the energy in an electromagnetic shower is carried by photons.
+To enhance the efficiency of detecting photons, materials with higher atomic numbers than silicon 
+are preferable.  In this paper we present test beam measurements with a Cadmium-Telluride sensor as 
+the active element of a secondary emission calorimeter with focus on the timing performance of the detector. 
+A Schottky type Cadmium-Telluride sensor with an active area of $1$~$\mathrm{cm}^{2}$ and a thickness of $1$~mm 
+is used in an arrangement with tungsten and lead absorbers. Measurements are performed with electron beams 
+in the energy range from 2 GeV to 200 GeV. A timing resolution of 25 ps is achieved under the best conditions.
+}
+
+
+\keywords{ Timing Detectors, Solid State Detectors, Calorimeters, Photon detectors for UV, visible and IR photons (solid-state) }
+
+
+\begin{document}
+  
+\maketitle
+\flushbottom
+\linenumbers
+
+
+%% \linenumbers
+%
+%% main text
+%
+\input{introduction.tex}
+%
+%
+\input{cdtesensor.tex}  
+%
+%
+\input{setup.tex}  
+%
+%
+\input{reco.tex}  
+%
+%
+\input{calo.tex}  
+%
+%
+\input{timing.tex}  
+%
+%
+\input{summary.tex}  
+
+
+\section{Acknowledgements} 
+Supported by funding from California Institute of Technology High Energy Physics
+under Contract DE-SC0011925 with the United States Department of Energy. We
+thank the CERN testbeam facilities personnel for excellent beam conditions 
+during our testbeam time. We also thank Paolo Meridiani and Francesco Micheli
+for their kind assistance on the setup of the DAQ system.
+
+
+%
+%
+%% If you have bibdatabase file and want bibtex to generate the
+%% bibitems, please use
+%%
+%%  \bibliographystyle{elsarticle-num} 
+%%  \bibliography{<your bibdatabase>}
+
+%% else use the following coding to input the bibitems directly in the
+%% TeX file.
+
+\bibliography{CdTeCalorimeter}{}
+\bibliographystyle{ieeetr} 
+
+%\begin{thebibliography}{00}
+
+%% \bibitem{label}
+%% Text of bibliographic item
+
+%\bibitem{}
+
+%\end{thebibliography}
+
+\end{document}
