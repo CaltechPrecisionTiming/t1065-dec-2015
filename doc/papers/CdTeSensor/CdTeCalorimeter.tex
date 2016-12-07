@@ -19,12 +19,8 @@
 %% with numbered style bibliographic references
 %% SP 2008/03/01
 
-\documentclass[a4paper,11pt]{article}
-\pdfoutput=1
-
-\usepackage{jinstpub} 
-
-%\biboptions{numbers,sort&compress}
+\documentclass[preprint,1p]{elsarticle}
+\biboptions{numbers,sort&compress}
 
 %% Use the option review to obtain double line spacing
 %% \documentclass[authoryear,preprint,review,12pt]{elsarticle}
@@ -45,7 +41,7 @@
 %% The amssymb package provides various useful mathematical symbols
 \usepackage{amssymb}
 \usepackage{lineno}
-%\usepackage{hyperref}
+\usepackage{hyperref}
 
 %% The amsthm package provides extended theorem environments
 %% \usepackage{amsthm}
@@ -74,20 +70,31 @@
 %% \address{Address\fnref{label3}}
 %% \fntext[label3]{}
 
+
+\journal{Nucl. Instrum. Meth. A}
+
+\begin{document}
+  
+%\maketitle
+%\flushbottom
+\linenumbers
+
+\begin{frontmatter}
+
 \title{Precision Timing Detectors with Cadmium Telluride Sensor}
 
 
 \author[1]{A.~Bornheim}
 \author[1]{C.~Pena}
 \author[1]{M.~Spiropulu}
-\author[1]{S.~Xie}
+\author[1]{S.~Xie\corref{cor}}
+\ead{sixie@hep.caltech.edu}
 \author[1]{Z.~Zhang}
-\affiliation[1]{California Institute of Technology, Pasadena, CA, USA}
+\address[1]{California Institute of Technology, Pasadena, CA, USA}
+\cortext[cor]{Corresponding author}
 
-\emailAdd{sixie@hep.caltech.edu}
 
-
-\abstract{
+\begin{abstract}
 Precision timing detectors for high energy physics experiments with temporal resolutions of a few $10$~ps are
 of pivotal importance to master the challenges posed by the highest energy particle accelerators such as the LHC.
 Calorimetric timing measurements have been a focus of recent research, enabled by exploiting the temporal 
@@ -101,18 +108,13 @@ the active element of a secondary emission calorimeter with focus on the timing 
 A Schottky type Cadmium-Telluride sensor with an active area of $1$~$\mathrm{cm}^{2}$ and a thickness of $1$~mm 
 is used in an arrangement with tungsten and lead absorbers. Measurements are performed with electron beams 
 in the energy range from 2 GeV to 200 GeV. A timing resolution of 25 ps is achieved under the best conditions.
-}
+\end{abstract}
 
+\begin{keyword}
+Cadmium Telluride \sep Timing \sep Calorimeter
+\end{keyword}
 
-\keywords{ Timing Detectors, Solid State Detectors, Calorimeters, Photon detectors for UV, visible and IR photons (solid-state) }
-
-
-\begin{document}
-  
-\maketitle
-\flushbottom
-\linenumbers
-
+\end{frontmatter}
 
 %% \linenumbers
 %
@@ -143,9 +145,8 @@ in the energy range from 2 GeV to 200 GeV. A timing resolution of 25 ps is achie
 Supported by funding from California Institute of Technology High Energy Physics
 under Contract DE-SC0011925 with the United States Department of Energy. We
 thank the CERN testbeam facilities personnel for excellent beam conditions 
-during our testbeam time. We also thank the teams from the University of Milano
-and the University of Roma for their kind assistance and allowing our use of the 
-DAQ system in the H2 testbeam area.
+during our testbeam time. We also thank Paolo Meridiani and Francesco Micheli
+for their kind assistance on the setup of the DAQ system.
 
 
 %
