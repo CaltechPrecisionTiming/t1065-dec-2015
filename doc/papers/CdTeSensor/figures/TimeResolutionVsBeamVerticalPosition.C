@@ -13,7 +13,7 @@
    cv->SetFrameBorderMode(0);
    cv->SetFrameBorderMode(0);
    
-   TH1F *timingvsx = new TH1F("timingvsx","timingvsx",12,3,16);
+   TH1F *timingvsx = new TH1F("timingvsx","timingvsx",12,-5.5,7.5);
    timingvsx->SetBinContent(1,63.4715);
    timingvsx->SetBinContent(2,28.95814);
    timingvsx->SetBinContent(3,26.31269);
