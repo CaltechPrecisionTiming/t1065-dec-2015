@@ -44,7 +44,7 @@
    timingvsr->SetLineWidth(2);
    timingvsr->SetMarkerStyle(20);
    // timingvsr->GetXaxis()->SetTitle("Distance to (12 mm,6 mm) position [mm]");
-   timingvsr->GetXaxis()->SetTitle("Distance to wire bond [mm]");
+   timingvsr->GetXaxis()->SetTitle("Distance to anode wire bond [mm]");
    timingvsr->GetXaxis()->SetRange(1,8);
    timingvsr->GetXaxis()->SetTitleSize(0.04);
    timingvsr->GetXaxis()->SetLabelSize(0.04);
