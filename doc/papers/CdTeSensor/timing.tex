@@ -76,9 +76,11 @@ the dominant factor for the time resolution.
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsAmplitude.pdf} 
 \caption{ Left: The distribution of the signal amplitude in the CdTe sensor and 
 the time measured in the CdTe sensor relative to the Photek reference detector
-is shown in the color scale. The mean value of the time measured in the CdTe sensor 
-as a function of the signal amplitude is shown in the black points. Right: The
-time resolution is measured as a function of the signal amplitude. } 
+is shown in the color scale. This data is from a 100 GeV electron beam after $X_0$ absorber.
+The mean value of the time measured in the CdTe sensor 
+as a function of the signal amplitude is shown in the black points. There is a small non-linearity we correct for.
+Right: The time resolution is measured as a function of the signal amplitude after correction
+for amplitude non-linearity. } 
 \label{fig:DeltaTVsAmplitude} 
 \end{figure} 
 
@@ -99,8 +101,9 @@ wire bond on the CdTe sensor, and observe a more clear depedence shown in
 Figure~\ref{fig:TimeResolutionVsR}. One possible cause this observed behavior
 is an additional time jitter induced by dispersion of the primary signal path from the
 ionization location to the location of the wirebond, but more detailed studies are necessary
-to derive a better understanding of this effect.
-
+to derive a better understanding of this effect. It will be crucial for any precision timing device
+using planar semi-conductor sensors to study the uniformity of the response to achieve an optimal performance.
+%
 %Fig: DeltaT vs Beam Location
 \begin{figure}[htbp] 
 \centering
@@ -109,7 +112,8 @@ to derive a better understanding of this effect.
 \caption{ The distribution of the beam particle position measured by the wire chamber
 and the time measured in the CdTe sensor relative to the Photek reference detector
 is shown in the color scale. The mean value of the time measured in the CdTe sensor as a function
-of the beam particle position is shown in the black points.} 
+of the beam particle position is shown in the black points. There is a dependency of the time difference
+on the impact point on the CdTe sensor which corresponds to about 100 ps across the CdTe sensor.} 
 \label{fig:DeltaTVsBeamXY} 
 \end{figure} 
 
@@ -129,7 +133,7 @@ non-uniformity in the CdTe sensor for a $100$~GeV electron after $6$~$\mathrm{X}
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsBeamHorizontalPosition.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsBeamVerticalPosition.pdf} 
 \caption{ The time resolution is measured as a function of the horizontal (left) and vertical (right)
-beam position. }
+beam position in a 2 mm wide fiducial cut around the center of the sensor in the vertical (left) and horizontal (right) direction respectively. }
 \label{fig:TimeResolutionVsBeamXY} 
 \end{figure} 
 
@@ -140,7 +144,9 @@ beam position. }
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsR.pdf} 
 \caption{ The time resolution is measured as a function of the planar distance of the 
 incident beam particle to the wire bond location on the sensor. The position non-uniformity
-of the time response as shown in Fig.~\ref{fig:DeltaTVsBeamXY} has been corrected for.}
+of the time response as shown in Fig.~\ref{fig:DeltaTVsBeamXY} has been corrected for. There 
+remains a dependency of the measured resolution across the sensor, reaching 20 ps in the location
+closest to the wire bond connection.}
 \label{fig:TimeResolutionVsR}
 \end{figure}
 
