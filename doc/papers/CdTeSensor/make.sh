@@ -1,4 +1,4 @@
-pdflatex CdTeCalorimeter
-bibtex CdTeCalorimeter
-pdflatex CdTeCalorimeter
-pdflatex CdTeCalorimeter
+pdflatex CdTeDetector
+bibtex CdTeDetector
+pdflatex CdTeDetector
+pdflatex CdTeDetector
