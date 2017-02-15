@@ -31,7 +31,10 @@ The precision of the time measurement for both types of MCP-PMTs is less than
 $10$~ps~\cite{MCPShowerMaxPaper,Anderson:2015gha}. As the purity of the electron beam at the T9 beamline is
 significantly lower than at the H2 beamline, we use a LYSO crystal
 optically coupled to an MCP-PMT as a means of discriminating the electrons from the pions
-in the beam. The entire setup of absorber, reference counter and CdTe sensor box is housed in an aluminum
+in the beam. The electrons produce electromagnetic shower particles which create
+scintillation light in the LYSO crystal, while pions do not. The efficiency for 
+identifying electrons with this method is measured to be greater than $9X\%$.
+The entire setup of absorber, reference counter and CdTe sensor box is housed in an aluminum
 box to provide further shielding against environmental noise.
 The schematic diagrams of the experimental setups at H2 and T9 
 are shown in Figure~\ref{fig:BeamSchematicDiagram}, and a photograph
@@ -63,7 +66,8 @@ The lead absorber is not present in the photo and was later inserted in front of
 The horizontal and vertical position measurements from the wire chamber are used to determine the location
 of the CdTe sensor relative to the beam and to align the beam. In 
 Figure~\ref{fig:BeamSensorPosition}, we show the average amplitude measured in the
-CdTe sensor as a function of the horizontal and vertical positions as measured by the wire chamber. Based
+CdTe sensor after $6$~radiation lengths of tungsten absorber
+as a function of the horizontal and vertical positions as measured by the wire chamber. Based
 on these plots, we can restrict our measurements to those electrons whose impact point is close
 to the center of the CdTe sensor.
 
@@ -73,7 +77,7 @@ to the center of the CdTe sensor.
 \includegraphics[width=0.49\textwidth]{figures/CdTeProfile_X.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/CdTeProfile_Y.pdf} 
 \caption{The average amplitude measured in the CdTe sensor is plotted as a function of 
-the horizontal and vertical positions of the beam particle as measured by the wire chamber. The measurement shown was performed with electrons of 100 GeV and $6\, X_0$ of absorber.} 
+the horizontal and vertical positions of the beam particle as measured by the wire chamber. The measurement shown was performed with electrons of 100 GeV and $6\, X_0$ of tungsten absorber.} 
 \label{fig:BeamSensorPosition} 
 \end{figure} 
 
