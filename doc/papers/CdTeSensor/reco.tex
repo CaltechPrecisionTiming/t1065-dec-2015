@@ -29,33 +29,33 @@ attenuator and a $36$~dB fast amplifier. Right: Zoom in of the example pulse. }
 
 The total charge collected in each channel is obtained by computing the integral of the pulse
 waveform over the full $200$~ns range recorded by the digitizer. 
-The timestamp for each signal is reconstructed by fitting the pulse waveform with
+The time-stamp for each signal is reconstructed by fitting the pulse waveform with
 an appropriate functional form. For signal pulses from the MCP-PMTs, used as reference timers, 
 we fit a Gaussian function to a $1.5$~ns window around the peak of the pulse and extract the 
-timestamp $t_{0}$ as the mean parameter of the Gaussian function. For signal pulses from the
+time-stamp $t_{0}$ as the mean parameter of the Gaussian function. For signal pulses from the
 CdTe sensor, we fit a linear function to time sample points between $10\%$ and $60\%$ of the pulse
-maximum and the timestamp $t_{1}$ is assigned as the time at which the fitted linear function
-rises to $30\%$ of the pulse maximum. More details of the timestamp reconstruction can be
+maximum and the time-stamp $t_{1}$ is assigned as the time at which the fitted linear function
+rises to $30\%$ of the pulse maximum. More details of the time-stamp reconstruction can be
 found in reference~\cite{Anderson:2015gha}.
 
 
-For the measurements performed at the H2 beamline, 
+For the measurements performed at the H2 beam-line, 
 based on the results shown in Figure~\ref{fig:BeamSensorPosition} we select events
 for which the incident beam particle lies within a region of size $3$~mm by $3$~mm 
-about the center of the sensor. For the measurements performed at the T9 beamline,
+about the center of the sensor. For the measurements performed at the T9 beam-line,
 the resolution of the wire chamber measurement was insufficient to make this 
 requirement. We also require that the 
 signal in the reference MCP-PMT detector has an amplitude larger than $25$~mV. 
-For data collected at the H2 beamline, the MCP-PMT detector is located behind
+For data collected at the H2 beam-line, the MCP-PMT detector is located behind
 the absorbers and can discriminate between electrons that shower in the absorber
 material and pions that do not. We require that the signal amplitude in the 
 MCP-PMT detector is larger than $500$~mV to select a pure sample of electrons. For
-data collected at the T9 beamline, the electron selection is performed using
+data collected at the T9 beam-line, the electron selection is performed using
 the LYSO scintillating crystal placed behind the absorber material and the CdTe sensor,
 as shown in Figure~\ref{fig:BeamSchematicDiagram}. The electromagnetic shower particles produce
 scintillation light in the LYSO crystal and are read out by an MCP-PMT. We require that
 the signal amplitude in the MCP-PMT coupled to the LYSO crystal is larger than $800$~mV
 to select a sample of pure electrons. Furthermore, as the precision of the beam particle position 
-measured by the wire chambers at the T9 beamline is relatively poor, we also require
+measured by the wire chambers at the T9 beam-line is relatively poor, we also require
 large signals in the $1$~cm~$\times$~$1$~cm scintillator trigger counter, with
 amplitude above $150$~mV, to constrain the beam to a smaller geometric region. 
