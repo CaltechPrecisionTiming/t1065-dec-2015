@@ -2,9 +2,9 @@
 \section{Timing Measurements} 
 \label{sec:timing} 
 
-We characterize the timing performance of the CdTe sensor by measuring the timestamps
+We characterize the timing performance of the CdTe sensor by measuring the time-stamps
 relative to the MCP-PMT device used as a reference timer. An example of the distribution 
-of the timestamp measurement for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
+of the time-stamp measurement for $100$~GeV electrons after $6$~$\mathrm{X}_{0}$ of absorber
 material is shown in Figure~\ref{fig:DeltaT}. We extract the time measurement
 resolution from this distribution as the width parameter of a Gaussian fit.
 In Figure~\ref{fig:TimeResolutionVsEnergy} we show the measured time resolution as a function of the
@@ -18,7 +18,7 @@ We study a number of such factors in Section~\ref{sec:systematicLimitations} bel
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{figures/100GeV_deltaT.pdf} 
-\caption{Distribution of the timestamp measurement in the CdTe sensor for a $100$~GeV
+\caption{Distribution of the time-stamp measurement in the CdTe sensor for a $100$~GeV
 electron after $6$~$\mathrm{X}_{0}$ of tungsten and lead absorber. } 
 \label{fig:DeltaT} 
 \end{figure} 
@@ -35,11 +35,11 @@ of the electron beam energy. }
 
 
 To further characterize the timing performance of the CdTe signals, we measure the
-risetime, defined as the time for the signal to rise from $10\%$ to $90\%$ of its maximum
-amplitude, for various electron beam energies. The distribution of risetime for
-$100$~GeV electrons and the measured risetime as a function of the beam energy
+rise-time, defined as the time for the signal to rise from $10\%$ to $90\%$ of its maximum
+amplitude, for various electron beam energies. The distribution of rise-time for
+$100$~GeV electrons and the measured rise-time as a function of the beam energy
 are shown on the left and right of Figure~\ref{fig:riseTime} respectively. 
-We observe a risetime of around $1.3$~ns that does not vary significantly
+We observe a rise-time of around $1.3$~ns that does not vary significantly
 with the beam energy.
 
 
@@ -48,8 +48,8 @@ with the beam energy.
 \centering
 \includegraphics[width=0.49\textwidth]{figures/100GeV_risetime.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/RisetimeVsEnergy.pdf} 
-\caption{ Left: Distribution of risetime of the CdTe signal for $100$~GeV electrons. 
-Right: Risetime of the CdTe signal is plotted as a function of the incident beam energy. } 
+\caption{ Left: Distribution of rise-time of the CdTe signal for $100$~GeV electrons. 
+Right: Rise-time of the CdTe signal is plotted as a function of the incident beam energy. } 
 \label{fig:riseTime} 
 \end{figure} 
 
@@ -61,8 +61,8 @@ Right: Risetime of the CdTe signal is plotted as a function of the incident beam
 One of the major systematic effects that have been observed in past
 timing studies~\cite{Anderson:2015gha,Ronzhin201552,MCPShowerMaxPaper} is the dependence 
 of the time measurement on the amplitude of the signal. On the left of 
-Figure~\ref{fig:DeltaTVsAmplitude}, we show the dependence of the timestamp measurement 
-on the amplitude of the signal, and observe a mild dependance on amplitude, which we correct for
+Figure~\ref{fig:DeltaTVsAmplitude}, we show the dependence of the time-stamp measurement 
+on the amplitude of the signal, and observe a mild dependence on amplitude, which we correct for
 in subsequent figures.
 On the right of Figure~\ref{fig:DeltaTVsAmplitude}, we show the measured time resolution
 as a function of the signal amplitude and we observe a clear improvement
@@ -86,13 +86,13 @@ for amplitude non-linearity. }
 \end{figure} 
 
 
-We also study the dependence of the timestamp measurement as a function of the geometric
+We also study the dependence of the time-stamp measurement as a function of the geometric
 position of the incident beam particle as measured by the wire chambers in 
 Figure~\ref{fig:DeltaTVsBeamXY}. A relatively large and linear dependence is observed, 
 and this position non-uniformity of the time response adds significantly to the 
 time resolution (about $37$~ps). Performing a correction for this non-uniformity improves
 the time resolution from $45$~ps to $25$~ps for events with $100$~GeV electrons.
-The distribution of timestamps after correcting for the geometric position is shown
+The distribution of time-stamps after correcting for the geometric position is shown
 in Figure~\ref{fig:DeltaTCorr}. The measured time resolution, after correction for
 the position non-uniformity, has a mild dependence on the beam particle position 
 and is shown in Figure~\ref{fig:TimeResolutionVsBeamXY}. Combining the time resolution
@@ -119,7 +119,7 @@ on the impact point on the CdTe sensor which corresponds to about 100 ps across 
 \begin{figure}[htbp] 
 \centering
 \includegraphics[width=0.49\textwidth]{figures/CdTeTimingResolution_100GeV_PositionCorrected.pdf} 
-\caption{Distribution of the timestamp measurement corrected for the geometric position
+\caption{Distribution of the time-stamp measurement corrected for the geometric position
 non-uniformity in the CdTe sensor for a $100$~GeV electron after $6$~$\mathrm{X}_{0}$ of tungsten absorber. } 
 \label{fig:DeltaTCorr} 
 \end{figure} 
@@ -132,7 +132,7 @@ non-uniformity in the CdTe sensor for a $100$~GeV electron after $6$~$\mathrm{X}
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsBeamHorizontalPosition.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/TimeResolutionVsBeamVerticalPosition.pdf} 
 \caption{ The time resolution is measured as a function of the horizontal (left) and vertical (right)
-beam position in a 2 mm wide fiducial region around the center of the sensor in the vertical (left) 
+beam position in a 2 mm wide region around the center of the sensor in the vertical (left) 
 and horizontal (right) directions respectively. }
 \label{fig:TimeResolutionVsBeamXY} 
 \end{figure} 
